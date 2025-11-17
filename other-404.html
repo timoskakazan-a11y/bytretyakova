@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>404 - Страница не найдена</title>
+<script src="https://cdn.tailwindcss.com"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+<style>
+    body {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        background-color: #F4F1EC; /* Main site background color */
+        margin: 0;
+        font-family: 'Lato', sans-serif;
+        color: #2D2A26;
+    }
+
+    .plaque {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 300px;
+        height: 150px;
+        background-color: #fff;
+        border-radius: 75px; /* Strong rounding */
+        box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+        overflow: hidden; /* Hide everything that goes beyond the plaque */
+    }
+
+    .digit-container {
+        width: 80px;
+        height: 100px;
+        overflow: hidden;
+        position: relative;
+    }
+
+    .digit-spinner {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        animation-duration: 3s;
+        animation-timing-function: cubic-bezier(0.7, 0, 0.3, 1); /* Animation smoothness */
+        animation-iteration-count: infinite; /* Looping */
+    }
+
+    /* Apply custom animation for each drum */
+    .digit-spinner.digit-1 {
+        animation-name: spin-to-4;
+        animation-delay: 0s;
+    }
+
+    .digit-spinner.digit-2 {
+        animation-name: spin-to-0;
+        animation-delay: 0.2s; /* Small delay for asynchrony */
+    }
+
+    .digit-spinner.digit-3 {
+        animation-name: spin-to-4;
+        animation-delay: 0.4s;
+    }
+
+    .digit {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 100px; /* Height of one digit */
+        font-size: 80px;
+        font-weight: bold;
+        color: #333;
+    }
+
+    /* Animation to stop at digit 4 */
+    @keyframes spin-to-4 {
+        0% {
+            transform: translateY(0); /* Start with 0 */
+        }
+        80%, 100% {
+            /* Digit height is 100px. To show '4', shift by 4 * 100px */
+            transform: translateY(-400px);
+        }
+    }
+
+    /* Animation to stop at digit 0 */
+    @keyframes spin-to-0 {
+        0% {
+            transform: translateY(-500px); /* Start with a different digit for variety */
+        }
+        80%, 100% {
+            /* No shift needed to show '0' */
+            transform: translateY(0);
+        }
+    }
+
+</style>
+</head>
+<body>
+
+<div class="plaque">
+    <div class="digit-container">
+        <div class="digit-spinner digit-1">
+            <div class="digit">0</div>
+            <div class="digit">1</div>
+            <div class="digit">2</div>
+            <div class="digit">3</div>
+            <div class="digit" style="color: #B89A7A;">4</div> <!-- Final digit -->
+            <div class="digit">5</div>
+            <div class="digit">6</div>
+            <div class="digit">7</div>
+            <div class="digit">8</div>
+            <div class="digit">9</div>
+        </div>
+    </div>
+    <div class="digit-container">
+        <div class="digit-spinner digit-2">
+            <div class="digit" style="color: #B89A7A;">0</div> <!-- Final digit -->
+            <div class="digit">1</div>
+            <div class="digit">2</div>
+            <div class="digit">3</div>
+            <div class="digit">4</div>
+            <div class="digit">5</div>
+            <div class="digit">6</div>
+            <div class="digit">7</div>
+            <div class="digit">8</div>
+            <div class="digit">9</div>
+        </div>
+    </div>
+    <div class="digit-container">
+        <div class="digit-spinner digit-3">
+             <div class="digit">0</div>
+             <div class="digit">1</div>
+             <div class="digit">2</div>
+             <div class="digit">3</div>
+             <div class="digit" style="color: #B89A7A;">4</div> <!-- Final digit -->
+             <div class="digit">5</div>
+             <div class="digit">6</div>
+             <div class="digit">7</div>
+             <div class="digit">8</div>
+             <div class="digit">9</div>
+        </div>
+    </div>
+</div>
+
+<div class="text-center mt-12">
+    <h1 class="text-4xl" style="font-family: 'Playfair Display', serif;">Страница не найдена</h1>
+    <p class="mt-4 text-lg text-gray-600">К сожалению, мы не смогли найти страницу, которую вы искали.</p>
+    <a href="/" class="mt-8 inline-block border border-[#B89A7A] text-[#B89A7A] py-2 px-6 rounded-full uppercase tracking-widest text-xs font-semibold hover:bg-[#B89A7A] hover:text-white transition-colors duration-300">
+        Вернуться на главную
+    </a>
+</div>
+
+</body>
+</html>
