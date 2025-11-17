@@ -100,7 +100,6 @@
       </a>
       <nav class="hidden md:flex items-center space-x-8">
         <a href="#about" class="text-gray-600 hover:text-black transition-colors duration-200">Обо мне</a>
-        <a href="#projects" class="text-gray-600 hover:text-black transition-colors duration-200">Проекты</a>
         <a href="#contact" class="text-gray-600 hover:text-black transition-colors duration-200">Контакты</a>
       </nav>
       <div class="md:hidden">
@@ -114,7 +113,6 @@
     <div id="mobile-menu" class="hidden md:hidden bg-white/95 backdrop-blur-sm shadow-lg">
       <nav class="flex flex-col items-center space-y-4 py-4">
         <a href="#about" class="text-gray-600 hover:text-black transition-colors duration-200">Обо мне</a>
-        <a href="#projects" class="text-gray-600 hover:text-black transition-colors duration-200">Проекты</a>
         <a href="#contact" class="text-gray-600 hover:text-black transition-colors duration-200">Контакты</a>
       </nav>
     </div>
@@ -133,31 +131,11 @@
       </div>
 
       <!-- Hanging Lamps -->
-      <img src="https://i.postimg.cc/hjyWnY3W/Generated-Image-November-17-2025-3-45PM-Photoro om.png" alt="Hanging lamps" class="absolute top-0 left-4 sm:left-8 md:left-16 z-10 w-auto h-[40vh] md:h-[50vh] max-h-[480px] pointer-events-none" style="animation: slideInDown 1.1s cubic-bezier(0.25, 0.46, 0.45, 0.94) 0.6s backwards;">
+      <img src="https://i.postimg.cc/hjyWnY3W/Generated-Image-November-17-2025-3-45PM-Photoroom.png" alt="Hanging lamps" class="absolute top-0 left-4 sm:left-8 md:left-16 z-10 w-auto h-[40vh] md:h-[50vh] max-h-[480px] pointer-events-none" style="animation: slideInDown 1.1s cubic-bezier(0.25, 0.46, 0.45, 0.94) 0.6s backwards;">
 
       <!-- Main Image -->
       <img src="https://i.postimg.cc/TPP1RVNB/Generated-Image-November-17-2025-1-16PM-Photoroom.png" alt="Alina Tretyakova on a sofa" class="absolute z-20 bottom-[-2vh] right-4 md:right-8 lg:right-12 w-auto h-[78vh] sm:h-[84vh] md:h-[94vh] max-h-[900px] max-w-none" style="animation: slideInRight 1.2s cubic-bezier(0.25, 0.46, 0.45, 0.94) 0.5s backwards;">
 
-    </section>
-    
-    <!-- Stats Section -->
-    <section id="stats" class="py-20 bg-[#EAE7E1]">
-      <div class="container mx-auto px-6">
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
-          <div class="scroll-reveal scroll-reveal-fade-up">
-            <p class="text-4xl sm:text-5xl font-serif font-bold text-gray-900">10+</p>
-            <p class="mt-2 text-sm uppercase tracking-widest text-muted">Лет опыта</p>
-          </div>
-          <div class="scroll-reveal scroll-reveal-fade-up" style="transition-delay: 0.2s;">
-            <p class="text-4xl sm:text-5xl font-serif font-bold text-gray-900">300+</p>
-            <p class="mt-2 text-sm uppercase tracking-widest text-muted">Завершенных проектов</p>
-          </div>
-          <div class="scroll-reveal scroll-reveal-fade-up" style="transition-delay: 0.4s;">
-            <p class="text-4xl sm:text-5xl font-serif font-bold text-gray-900">12</p>
-            <p class="mt-2 text-sm uppercase tracking-widest text-muted">Международных наград</p>
-          </div>
-        </div>
-      </div>
     </section>
 
     <!-- Featured Items Section -->
@@ -208,6 +186,45 @@
       </div>
     </section>
 
+    <!-- Design Album Carousel Section -->
+    <section id="album-carousel-section" class="py-20 md:py-32 bg-[#EAE7E1]">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-12 md:mb-16 scroll-reveal scroll-reveal-fade-up">
+                <h2 class="text-3xl sm:text-4xl md:text-5xl font-serif">Альбом дизайн-проекта</h2>
+                <p class="text-muted mt-2">Полный комплект чертежей для безупречной реализации вашей мечты.</p>
+            </div>
+            <div id="album-carousel-container" class="relative max-w-4xl mx-auto scroll-reveal scroll-reveal-fade-up" style="transition-delay: 0.2s;">
+                <div id="album-carousel-slides" class="relative w-full aspect-[1.414/1] overflow-hidden rounded-lg shadow-2xl bg-white">
+                    <!-- Album slides will be injected here -->
+                </div>
+                <button id="album-carousel-prev" class="absolute top-1/2 left-0 -translate-x-1/2 -translate-y-1/2 bg-[#2D2A26]/80 text-white p-3 rounded-full shadow-lg hover:bg-[#2D2A26] transition-all duration-300 backdrop-blur-sm z-10">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M15 19l-7-7 7-7" /></svg>
+                </button>
+                <button id="album-carousel-next" class="absolute top-1/2 right-0 translate-x-1/2 -translate-y-1/2 bg-[#2D2A26]/80 text-white p-3 rounded-full shadow-lg hover:bg-[#2D2A26] transition-all duration-300 backdrop-blur-sm z-10">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7" /></svg>
+                </button>
+                <div id="album-carousel-dots" class="absolute bottom-4 left-1/2 -translate-x-1/2 flex space-x-2">
+                    <!-- Dots will be injected here -->
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 3D Rendering Section -->
+    <section id="rendering" class="py-20 md:py-32 bg-[#F4F1EC]">
+        <div class="container mx-auto px-6">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-center">
+                <div class="scroll-reveal scroll-reveal-left">
+                    <h2 class="text-3xl sm:text-4xl md:text-5xl font-serif mb-6">3D-визуализация</h2>
+                    <p id="rendering-text" class="text-lg text-gray-800 leading-relaxed"></p>
+                </div>
+                <div id="rendering-images" class="grid grid-cols-2 gap-4 scroll-reveal scroll-reveal-right" style="transition-delay: 0.2s;">
+                    <!-- Rendering images will be injected here -->
+                </div>
+            </div>
+        </div>
+    </section>
+
     <!-- About Section -->
     <section id="about" class="py-20 md:py-32 bg-[#EAE7E1]">
       <div class="container mx-auto px-6">
@@ -219,27 +236,16 @@
           </div>
           <div class="w-full md:w-2/3 scroll-reveal scroll-reveal-right" style="transition-delay: 0.2s;">
             <h2 class="text-3xl sm:text-4xl md:text-5xl font-serif mb-6">Философия дизайна</h2>
-            <div id="about-bio" class="space-y-4 text-muted leading-relaxed"></div>
+            <blockquote id="about-bio" class="mt-8 border-l-4 border-gray-300 pl-6">
+                <p class="text-xl md:text-2xl italic text-gray-700 leading-relaxed"></p>
+            </blockquote>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- Projects Section -->
-    <section id="projects" class="py-20 md:py-32 bg-[#F4F1EC] overflow-hidden">
-      <div class="container mx-auto px-6">
-        <div class="text-center mb-16 md:mb-24 scroll-reveal scroll-reveal-fade-up">
-          <h2 class="text-3xl sm:text-4xl md:text-5xl font-serif">Портфолио</h2>
-          <p class="text-muted mt-2">Избранные проекты, отражающие мой подход к дизайну.</p>
-        </div>
-        <div id="projects-list" class="space-y-20 md:space-y-32">
-          <!-- Project items will be injected here -->
-        </div>
-      </div>
-    </section>
-
     <!-- Contact Section -->
-    <section id="contact" class="py-20 md:py-32 bg-[#EAE7E1]">
+    <section id="contact" class="py-20 md:py-32 bg-[#F4F1EC]">
       <div class="container mx-auto px-6 text-center scroll-reveal scroll-reveal-fade-up">
         <h2 class="text-3xl sm:text-4xl md:text-5xl font-serif mb-4">Связаться со мной</h2>
         <p class="max-w-2xl mx-auto text-muted mb-12">
@@ -250,23 +256,18 @@
           <span class="hidden md:block text-gray-400">|</span>
           <a id="contact-phone" href="" class="text-lg text-gray-800 hover:text-accent transition-colors"></a>
         </div>
-        <div id="contact-socials" class="flex justify-center space-x-6 mt-12">
+        <div id="contact-socials" class="flex justify-center mt-12">
             <!-- Social icons will be injected here -->
         </div>
       </div>
     </section>
   </main>
 
-  <footer class="bg-[#F4F1EC] border-t border-gray-200 py-6">
+  <footer class="bg-[#EAE7E1] border-t border-gray-200 py-6">
     <div class="container mx-auto px-6 text-center text-gray-500 text-sm">
       <p id="footer-text"></p>
     </div>
   </footer>
-
-  <!-- Project Modal -->
-  <div id="project-modal-container" class="hidden">
-    <!-- Modal content will be injected here -->
-  </div>
   
   <!-- Back to top button -->
   <a id="back-to-top" href="#home" class="fixed bottom-8 right-8 bg-[#2D2A26]/80 text-white p-3 rounded-full shadow-lg hover:bg-[#2D2A26] transition-all duration-300 backdrop-blur-sm z-40">
@@ -282,332 +283,245 @@ document.addEventListener('DOMContentLoaded', function () {
   const designerProfile = {
     name: 'Алина Третьякова',
     title: 'Дизайнер Интерьеров',
-    photoUrl: 'https://picsum.photos/id/1027/800/1200',
+    photoUrl: 'https://i.postimg.cc/Gm4tDffH/photo-5249443676855930270-y-(1).jpg',
     bio: [
-      'Создаю пространства, которые рассказывают историю. Моя философия заключается в том, чтобы каждый интерьер был не только эстетически привлекательным, но и функциональным, отражая индивидуальность и образ жизни его владельцев.',
-      'С более чем десятилетним опытом в индустрии, я специализируюсь на жилых и коммерческих проектах, сочетая современные тенденции с вечной классикой. Внимание к деталям, качественные материалы и тесное сотрудничество с клиентом — ключи к созданию идеального дома.'
+      '«Создаю пространства, которые рассказывают историю, отражая индивидуальность и образ жизни его владельцев.»'
     ],
-    email: 'hello@alinadesign.com',
-    phone: '+7 (926) 123-45-67',
+    email: 'allen86@list.ru',
+    phone: '+89375211855',
     socials: [
-      { name: 'Instagram', url: '#' },
-      { name: 'Pinterest', url: '#' },
-      { name: 'Behance', url: '#' },
+      { name: 'Telegram', url: 'https://t.me/alinatretya', handle: '@alinatretya' },
     ],
   };
-
-  const projects = [
-    {
-      id: 1,
-      title: 'Квартира в стиле лофт',
-      category: 'Жилой',
-      description: 'Проект современной квартиры в Москве с элементами лофта. Открытая планировка, кирпичные стены и панорамные окна создают ощущение простора и света. Мебель на заказ и уникальные световые решения подчеркивают характер пространства.',
-      coverImage: 'https://picsum.photos/seed/project1/1000/1200',
-      images: [
-        'https://picsum.photos/seed/project1-1/1200/800',
-        'https://picsum.photos/seed/project1-2/1200/800',
-        'https://picsum.photos/seed/project1-3/1200/800',
-        'https://picsum.photos/seed/project1-4/1200/800',
-      ],
-    },
-    {
-      id: 2,
-      title: 'Минималистичный загородный дом',
-      category: 'Жилой',
-      description: 'Дизайн загородного дома, где преобладают чистые линии, натуральные материалы и нейтральная цветовая палитра. Основной задачей было создание спокойной и гармоничной атмосферы, способствующей отдыху от городской суеты.',
-      coverImage: 'https://picsum.photos/seed/project2/1000/1200',
-      images: [
-        'https://picsum.photos/seed/project2-1/1200/800',
-        'https://picsum.photos/seed/project2-2/1200/800',
-      ],
-    },
-    {
-      id: 3,
-      title: 'Креативное пространство "ArtHub"',
-      category: 'Коммерческий',
-      description: 'Дизайн многофункционального коммерческого пространства, включающего коворкинг, галерею и кафе. Яркие цветовые акценты, нестандартные формы и трансформируемая мебель делают это место идеальным для творчества и сотрудничества.',
-      coverImage: 'https://picsum.photos/seed/project3/1000/1200',
-      images: [
-        'https://picsum.photos/seed/project3-1/1200/800',
-        'https://picsum.photos/seed/project3-2/1200/800',
-        'https://picsum.photos/seed/project3-3/1200/800',
-      ],
-    },
-    {
-      id: 4,
-      title: 'Элегантные апартаменты в центре',
-      category: 'Жилой',
-      description: 'Проект апартаментов с акцентом на роскошь и комфорт. Использование мрамора, латуни и бархата в сочетании с продуманным освещением создает утонченную и респектабельную атмосферу.',
-      coverImage: 'https://picsum.photos/seed/project4/1000/1200',
-      images: [
-        'https://picsum.photos/seed/project4-1/1200/800',
-        'https://picsum.photos/seed/project4-2/1200/800',
-        'https://picsum.photos/seed/project4-3/1200/800',
-      ],
-    },
-  ];
 
   const featuredItems = [
     {
       name: 'Современная ванная',
-      price: '€1,250',
-      imageUrl: 'https://images.unsplash.com/photo-1600121989485-8e334621c194?q=80&w=800&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+      imageUrl: 'https://i.postimg.cc/t4JD8Frw/f7097eee73187d6cb73ec82003f9b425.jpg',
     },
     {
       name: 'Классический стул',
-      price: '€320',
-      imageUrl: 'https://images.unsplash.com/photo-1598300042247-d088f8ab3a91?q=80&w=800&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+      imageUrl: 'https://i.postimg.cc/hG7stcR7/43f968efc2e8431405c45a4ab848ed9a.jpg',
+    },
+    {
+      name: 'Минималистичный диван',
+      imageUrl: 'https://i.postimg.cc/D07P6GJ8/8c4b291e91013becc44b01358b8de6d4.jpg',
     },
     {
       name: 'Подвесной светильник',
-      price: '€180',
-      imageUrl: 'https://images.unsplash.com/photo-1530906358829-e84b27690dd8?q=80&w=800&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
-    },
-    {
-      name: 'Мягкое кресло',
-      price: '€750',
-      imageUrl: 'https://images.unsplash.com/photo-1557854311-52f5674ebb48?q=80&w=800&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+      imageUrl: 'https://i.postimg.cc/QNqbtfw7/ead84600de0b0dc3eb45855d8f4d5b6e.jpg',
     }
   ];
+
+  const designAlbumSlides = [
+    { src: 'https://i.postimg.cc/6T95bWt0/photo-5249443676855931062-y.jpg', alt: 'Элемент дизайн-проекта 1' },
+    { src: 'https://i.postimg.cc/0r82XkPG/photo-5249443676855931066-y.jpg', alt: 'Элемент дизайн-проекта 2' },
+    { src: 'https://i.postimg.cc/8s1PXpN5/photo-5249443676855931067-y.jpg', alt: 'Элемент дизайн-проекта 3' },
+    { src: 'https://i.postimg.cc/YGx22Vfj/photo-5249443676855931069-y.jpg', alt: 'Элемент дизайн-проекта 4' },
+    { src: 'https://i.postimg.cc/47144MbC/photo-5249443676855931071-y.jpg', alt: 'Элемент дизайн-проекта 5' },
+    { src: 'https://i.postimg.cc/wykxxPcp/photo-5249443676855931072-y.jpg', alt: 'Элемент дизайн-проекта 6' },
+    { src: 'https://i.postimg.cc/phBVV7Yb/photo-5249443676855931074-y.jpg', alt: 'Элемент дизайн-проекта 7' },
+    { src: 'https://i.postimg.cc/phvXHx8x/photo-5249443676855931076-y.jpg', alt: 'Элемент дизайн-проекта 8' },
+    { src: 'https://i.postimg.cc/3ymJVWkn/photo-5249443676855931081-y.jpg', alt: 'Элемент дизайн-проекта 9' },
+  ];
   
-  const socialIcons = {
-    Instagram: '<svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.85s-.011 3.584-.069 4.85c-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07s-3.584-.012-4.85-.07c-3.252-.148-4.771-1.691-4.919-4.919-.058-1.265-.069-1.645-.069-4.85s.011-3.584.069-4.85c.149-3.225 1.664 4.771 4.919-4.919 1.266.058 1.644.07 4.85.07zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948s.014 3.667.072 4.947c.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072s3.667-.014 4.947-.072c4.358-.2 6.78-2.618 6.98-6.98.059-1.281.073-1.689.073-4.948s-.014-3.667-.072-4.947c-.2-4.358-2.618-6.78-6.98-6.98-1.281-.058-1.689-.072-4.948-.072z"></path><path d="M12 6.848c-2.832 0-5.152 2.32-5.152 5.152s2.32 5.152 5.152 5.152 5.152-2.32 5.152-5.152-2.32-5.152-5.152-5.152zm0 8.302c-1.743 0-3.152-1.409-3.152-3.152s1.409-3.152 3.152-3.152 3.152 1.409 3.152 3.152-1.409 3.152-3.152-3.152z"></path><path d="M16.949 6.848c-.69 0-1.25.56-1.25 1.25s.56 1.25 1.25 1.25 1.25-.56 1.25-1.25-.56-1.25-1.25-1.25z"></path></svg>',
-    Pinterest: '<svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M12.017 0C5.385 0 0 5.385 0 12.017c0 5.132 3.185 9.545 7.636 11.233-.02-.818-.002-1.99.23-2.936.25-1.01.166-1.154.166-1.154s-.47-.188-.47-.842c0-.756.54-1.32.93-1.32.44 0 .66.332.66.732 0 .44-.28 1.1-.42 1.71-.12.52.26.94.77.94 1.41 0 2.22-1.83 2.22-3.83 0-1.62-.96-2.9-2.29-2.9-1.93 0-3.08 1.42-3.08 3.15 0 .68.21 1.13.51 1.51.07.1.08.18.06.27-.06.28-.2.83-.25 1.01-.06.26-.14.33-.39.2-1.2-.64-1.98-2.4-1.98-4.04 0-3.17 2.37-6.07 6.45-6.07 3.42 0 5.8 2.5 5.8 5.3 0 3.53-1.84 6.22-4.5 6.22-1.07 0-1.87-.87-1.63-1.95.28-1.28.82-2.64.82-3.53 0-.82-.44-1.52-1.32-1.52-.98 0-1.78.99-1.78 2.28 0 .86.32 1.43.32 1.43s-1.08 4.56-1.27 5.36c-.4.16-.83.25-1.27.25-3.32 0-6.02-2.7-6.02-6.02 0-3.32 2.7-6.02 6.02-6.02s6.02 2.7 6.02 6.02c0 1.1-.22 2.14-.62 3.03.1.01 1.2-.55 1.2-.55.93-.44 1.6-1.4 1.6-2.74 0-2.03-1.1-3.6-2.94-3.6-1.1 0-2.02.8-2.02 1.76 0 .74.32 1.52.32 1.52s-1.03 4.35-1.2 5.1c.42 1.45 2.13 2.8 3.93 2.8 4.7 0 8.2-3.9 8.2-8.9 0-6.63-5.38-12.02-12.01-12.02z"></path></svg>',
-    Behance: '<svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M22.385 5.308h-6.265v1.442h6.265v-1.442zm-.147 3.758h-6.118v1.442h6.118v-1.442zm-12.56-3.864c1.336 0 2.316.996 2.316 2.332 0 1.336-.98 2.316-2.316-2.316s-2.316-.98-2.316-2.316c0-1.336.98-2.332 2.316-2.332zm12.707 9.684h-6.56v-4.116h-1.442v4.116h-4.966v-7.14c1.132.552 2.348.864 3.63.864 3.232 0 5.64-2.4 5.64-5.592h1.698v11.868zm-12.56-2.58c1.336 0 2.316.98 2.316 2.316s-.98 2.316-2.316-2.316-2.316-.98-2.316-2.316.98-2.316 2.316-2.316zm-7.678-7.608c0-3.064 2.508-5.556 5.592-5.556s5.592 2.492 5.592 5.556c0 3.064-2.508 5.556-5.592 5.556s-5.592-2.492-5.592-5.556zm1.698 0c0 2.144 1.748 3.888 3.894 3.888s3.894-1.744 3.894-3.888-1.748-3.888-3.894-3.888-3.894 1.744-3.894 3.888z"></path></svg>'
+  const renderingData = {
+    text: 'Фотореалистичные 3D-визуализации позволяют увидеть ваш будущий интерьер в мельчайших деталях еще до начала строительных работ. Это идеальный инструмент для согласования всех элементов дизайна и принятия верных решений.',
+    images: [
+      { src: 'https://i.postimg.cc/fT7XRyPL/photo-5249443676855930260-y.jpg', alt: 'Визуализация гостиной' },
+      { src: 'https://i.postimg.cc/sg6MMh4D/photo-5249443676855930261-y.jpg', alt: 'Визуализация спальни' },
+    ]
   };
 
-  // --- STATE ---
-  let currentModalProject = null;
-  let currentImageIndex = 0;
-
   // --- RENDER FUNCTIONS ---
-  function populatePage() {
-    // About
-    document.getElementById('about-photo').src = designerProfile.photoUrl;
-    document.getElementById('about-photo').alt = 'Фотография ' + designerProfile.name;
-    const bioContainer = document.getElementById('about-bio');
-    bioContainer.innerHTML = designerProfile.bio.map(p => `<p>${p}</p>`).join('');
-    
-    // Featured Items
-    const itemsGrid = document.getElementById('items-grid');
-    itemsGrid.innerHTML = featuredItems.map((item, index) => `
-      <div class="group relative rounded-2xl overflow-hidden shadow-lg scroll-reveal scroll-reveal-fade-up cursor-pointer" style="transition-delay: ${index * 0.1}s;">
-        <img src="${item.imageUrl}" alt="${item.name}" class="w-full h-full object-cover aspect-[3/4] transition-transform duration-500 group-hover:scale-105" style="pointer-events: auto;">
-        <div class="absolute inset-0 bg-gradient-to-t from-black/60 via-black/20 to-transparent pointer-events-none"></div>
-        <div class="absolute bottom-0 left-0 p-6 text-white">
-          <h3 class="text-xl" style="font-family: 'Playfair Display', serif;">${item.name}</h3>
-          <p class="text-white/90 mt-1">${item.price}</p>
-        </div>
-      </div>
-    `).join('');
-
-    // Projects
-    const projectsList = document.getElementById('projects-list');
-    projectsList.innerHTML = projects.map((project, index) => {
-        const isReversed = index % 2 !== 0;
-        const imageAnim = isReversed ? 'scroll-reveal-right' : 'scroll-reveal-left';
-        const textAnim = isReversed ? 'scroll-reveal-left' : 'scroll-reveal-right';
-        
-        return `
-      <div class="project-item flex flex-col md:flex-row ${isReversed ? 'md:flex-row-reverse' : ''} items-center gap-10 md:gap-16">
-        <div class="w-full md:w-1/2 scroll-reveal ${imageAnim}">
-          <div class="project-image-container rounded-lg overflow-hidden shadow-2xl">
-              <img src="${project.coverImage}" alt="${project.title}" class="w-full h-auto object-cover">
+  const renderFeaturedItems = () => {
+    const grid = document.getElementById('items-grid');
+    if (grid) {
+      grid.innerHTML = featuredItems.map((item, index) => `
+        <div class="group relative rounded-2xl overflow-hidden shadow-lg scroll-reveal scroll-reveal-fade-up" style="transition-delay: ${index * 0.1}s;">
+          <img src="${item.imageUrl}" alt="${item.name}" class="w-full h-96 object-cover transition-transform duration-500 group-hover:scale-105">
+          <div class="absolute bottom-0 left-0 right-0 p-6 bg-gradient-to-t from-black/70 to-transparent">
+            <h3 class="text-xl font-semibold text-white">${item.name}</h3>
           </div>
         </div>
-        <div class="w-full md:w-1/2 text-center md:text-left scroll-reveal ${textAnim}" style="transition-delay: 0.2s;">
-            <p class="text-sm uppercase tracking-widest text-muted mb-2">${project.category}</p>
-            <h3 class="text-2xl sm:text-3xl md:text-4xl font-serif mb-4">${project.title}</h3>
-            <button 
-                onclick="openProjectModal(${project.id})"
-                class="mt-4 inline-block border border-accent text-accent py-2 px-6 rounded-full uppercase tracking-widest text-xs font-semibold hover:bg-accent hover:text-white transition-colors duration-300">
-                Подробнее
-            </button>
-        </div>
-      </div>
-    `}).join('');
-
-    // Contact
-    const emailLink = document.getElementById('contact-email');
-    emailLink.href = 'mailto:' + designerProfile.email;
-    emailLink.textContent = designerProfile.email;
-    const phoneLink = document.getElementById('contact-phone');
-    phoneLink.href = `tel:${designerProfile.phone.replace(/[^0-9+]/g, '')}`;
-    phoneLink.textContent = designerProfile.phone;
-
-    // Socials
-    const socialsContainer = document.getElementById('contact-socials');
-    socialsContainer.innerHTML = designerProfile.socials.map(social => `
-      <a href="${social.url}" target="_blank" class="text-gray-500 hover:text-accent transition-colors">
-        <span class="sr-only">${social.name}</span>
-        ${socialIcons[social.name] || ''}
-      </a>
-    `).join('');
-
-    // Footer
-    document.getElementById('footer-text').textContent = `© ${new Date().getFullYear()} ${designerProfile.name}. Все права защищены.`;
-  }
-
-  // --- UI LOGIC ---
-  const header = document.getElementById('app-header');
-  const menuToggleBtn = document.getElementById('menu-toggle-btn');
-  const mobileMenu = document.getElementById('mobile-menu');
-  const modalContainer = document.getElementById('project-modal-container');
-  const backToTopBtn = document.getElementById('back-to-top');
-
-
-  function handleScroll() {
-    // Header background
-    if (window.scrollY > 20) {
-      header.classList.add('bg-[#F4F1EC]/90', 'shadow-lg', 'backdrop-blur-sm');
-    } else {
-      header.classList.remove('bg-[#F4F1EC]/90', 'shadow-lg', 'backdrop-blur-sm');
-    }
-
-    // Back to top button
-    if (window.scrollY > 300) {
-      backToTopBtn.classList.add('visible');
-    } else {
-      backToTopBtn.classList.remove('visible');
-    }
-  }
-  
-  window.addEventListener('scroll', handleScroll, { passive: true });
-
-  menuToggleBtn.addEventListener('click', () => {
-    mobileMenu.classList.toggle('hidden');
-  });
-
-  mobileMenu.addEventListener('click', (e) => {
-    if (e.target.tagName === 'A') {
-      mobileMenu.classList.add('hidden');
-    }
-  });
-  
-  // --- MODAL LOGIC ---
-  function updateCarousel() {
-    const p = currentModalProject;
-    if (!p) return;
-
-    const imagesContainer = modalContainer.querySelector('#modal-images');
-    const dotsContainer = modalContainer.querySelector('#modal-dots');
-    
-    imagesContainer.innerHTML = p.images.map((img, i) => `
-      <div class="w-full h-64 md:h-full animate-fade-in ${i === currentImageIndex ? '' : 'hidden'}">
-        <img src="${img}" alt="Фото проекта ${p.title}" class="w-full h-full object-cover">
-      </div>
-    `).join('');
-
-    if (p.images.length > 1) {
-      dotsContainer.innerHTML = p.images.map((_, i) => `
-        <div class="w-2 h-2 rounded-full transition-colors ${i === currentImageIndex ? 'bg-gray-800' : 'bg-gray-400'}"></div>
       `).join('');
     }
-  }
+  };
 
-  function renderModal(project) {
-    currentModalProject = project;
-    const hasMultipleImages = project.images.length > 1;
+  const renderRenderingSection = () => {
+    const textContainer = document.getElementById('rendering-text');
+    const imagesContainer = document.getElementById('rendering-images');
+    
+    if (textContainer) {
+      textContainer.textContent = renderingData.text;
+    }
+    
+    if (imagesContainer) {
+      imagesContainer.innerHTML = `
+        <img src="${renderingData.images[0].src}" alt="${renderingData.images[0].alt}" class="w-full h-auto object-cover rounded-lg shadow-lg">
+        <img src="${renderingData.images[1].src}" alt="${renderingData.images[1].alt}" class="w-full h-auto object-cover rounded-lg shadow-lg mt-0 lg:mt-12">
+      `;
+    }
+  };
 
-    modalContainer.innerHTML = `
-      <div 
-        id="modal-backdrop"
-        class="fixed inset-0 bg-black/50 backdrop-blur-sm z-[100] flex items-center justify-center p-4 animate-fade-in">
-        
-        <div class="bg-white text-gray-800 rounded-lg shadow-2xl w-full max-w-5xl max-h-[90vh] flex flex-col md:flex-row overflow-hidden relative">
-          <button onclick="closeProjectModal()" class="absolute top-4 right-4 text-gray-500 bg-white/30 rounded-full p-1 z-20 hover:scale-110 transition-transform">
-            <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
-              <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
-            </svg>
-          </button>
+  const renderAboutSection = () => {
+    document.getElementById('about-photo')?.setAttribute('src', designerProfile.photoUrl);
+    document.getElementById('about-photo')?.setAttribute('alt', designerProfile.name);
+    const bioContainer = document.getElementById('about-bio');
+    if (bioContainer) {
+      const p = bioContainer.querySelector('p');
+      if (p) {
+        p.textContent = designerProfile.bio[0];
+      }
+    }
+  };
 
-          <div class="w-full md:w-2/3 relative flex-shrink-0 bg-gray-200">
-            <div id="modal-images"></div>
-            ${hasMultipleImages ? `
-              <div class="absolute inset-0 flex justify-between items-center px-2">
-                <button onclick="prevImage()" class="bg-black/20 text-white rounded-full p-2 hover:bg-black/40 transition-colors">
-                  <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M15 19l-7-7 7-7" /></svg>
-                </button>
-                <button onclick="nextImage()" class="bg-black/20 text-white rounded-full p-2 hover:bg-black/40 transition-colors">
-                  <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7" /></svg>
-                </button>
-              </div>
-              <div id="modal-dots" class="absolute bottom-4 left-1/2 -translate-x-1/2 flex space-x-2"></div>
-            ` : ''}
-          </div>
-          
-          <div class="w-full md:w-1/3 p-6 md:p-8 overflow-y-auto">
-            <h3 class="text-2xl md:text-3xl font-serif mb-2">${project.title}</h3>
-            <p class="text-sm text-muted mb-4 font-semibold uppercase tracking-wider">${project.category}</p>
-            <p class="text-gray-600 leading-relaxed">${project.description}</p>
-          </div>
-        </div>
-      </div>
-    `;
-    updateCarousel();
-    modalContainer.querySelector('#modal-backdrop').addEventListener('click', (e) => {
-        if (e.target.id === 'modal-backdrop') {
-            closeProjectModal();
+  const renderContactSection = () => {
+    const emailLink = document.getElementById('contact-email');
+    if (emailLink) {
+        emailLink.textContent = designerProfile.email;
+        emailLink.setAttribute('href', `mailto:${designerProfile.email}`);
+    }
+    const phoneLink = document.getElementById('contact-phone');
+    if (phoneLink) {
+        phoneLink.textContent = designerProfile.phone;
+        phoneLink.setAttribute('href', `tel:${designerProfile.phone.replace(/[()\s-]/g, '')}`);
+    }
+    const socialsContainer = document.getElementById('contact-socials');
+    if(socialsContainer){
+      const telegram = designerProfile.socials[0];
+      if (telegram) {
+        socialsContainer.innerHTML = `
+            <a href="${telegram.url}" target="_blank" rel="noopener noreferrer" class="text-lg text-gray-800 hover:text-accent transition-colors flex items-center gap-3" aria-label="${telegram.name}">
+                <svg class="w-7 h-7" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M12 2C6.475 2 2 6.475 2 12s4.475 10 10 10 10-4.475 10-10S17.525 2 12 2zm4.943 6.494l-2.252 10.656c-.16.756-.62.938-1.256.581l-3.203-2.344-1.544 1.481c-.17.17-.315.315-.555.315-.36 0-.524-.15-.615-.495l-1.08-3.465-3.268-1.012c-.756-.234-.765-.744.135-1.065l13.104-5.018c.63-.243 1.193.144 1.002.918z"></path>
+                </svg>
+                <span>${telegram.handle}</span>
+            </a>
+        `;
+      }
+    }
+  };
+
+  const renderFooter = () => {
+    const footerText = document.getElementById('footer-text');
+    if(footerText) {
+      footerText.textContent = `© ${new Date().getFullYear()} ${designerProfile.name}. Все права защищены.`;
+    }
+  };
+
+  // --- UI INTERACTIONS ---
+  const setupCarousel = () => {
+    const slidesContainer = document.getElementById('album-carousel-slides');
+    const dotsContainer = document.getElementById('album-carousel-dots');
+    const prevButton = document.getElementById('album-carousel-prev');
+    const nextButton = document.getElementById('album-carousel-next');
+
+    if (!slidesContainer || !dotsContainer || !prevButton || !nextButton) return;
+
+    let currentIndex = 0;
+
+    slidesContainer.innerHTML = designAlbumSlides.map((slide, index) => `
+        <img src="${slide.src}" alt="${slide.alt}" class="absolute top-0 left-0 w-full h-full object-cover transition-opacity duration-500 ease-in-out ${index === 0 ? 'opacity-100' : 'opacity-0'}">
+    `).join('');
+
+    dotsContainer.innerHTML = designAlbumSlides.map((_, index) => `
+        <button class="w-2.5 h-2.5 rounded-full transition-colors duration-300 ${index === 0 ? 'bg-white' : 'bg-white/50 hover:bg-white/75'}"></button>
+    `).join('');
+
+    const slides = slidesContainer.querySelectorAll('img');
+    const dots = dotsContainer.querySelectorAll('button');
+
+    function updateCarousel(newIndex) {
+        slides[currentIndex].classList.remove('opacity-100');
+        dots[currentIndex].classList.remove('bg-white');
+        dots[currentIndex].classList.add('bg-white/50');
+
+        currentIndex = (newIndex + slides.length) % slides.length;
+
+        slides[currentIndex].classList.add('opacity-100');
+        dots[currentIndex].classList.add('bg-white');
+        dots[currentIndex].classList.remove('bg-white/50');
+    }
+
+    prevButton.addEventListener('click', () => updateCarousel(currentIndex - 1));
+    nextButton.addEventListener('click', () => updateCarousel(currentIndex + 1));
+    dots.forEach((dot, index) => dot.addEventListener('click', () => updateCarousel(index)));
+  };
+  
+  const setupScrollHeader = () => {
+    const header = document.getElementById('app-header');
+    if (header) {
+      window.addEventListener('scroll', () => {
+        if (window.scrollY > 50) {
+          header.classList.add('bg-white/95', 'backdrop-blur-sm', 'shadow-md');
+        } else {
+          header.classList.remove('bg-white/95', 'backdrop-blur-sm', 'shadow-md');
         }
-    });
-  }
-
-  window.openProjectModal = function(projectId) {
-    const project = projects.find(p => p.id === projectId);
-    if (project) {
-      currentImageIndex = 0;
-      renderModal(project);
-      modalContainer.classList.remove('hidden');
-      document.body.style.overflow = 'hidden';
+      });
     }
-  }
-
-  window.closeProjectModal = function() {
-    const backdrop = modalContainer.querySelector('#modal-backdrop');
-    if (backdrop) {
-      backdrop.classList.remove('animate-fade-in');
-      backdrop.classList.add('animate-fade-out');
-      setTimeout(() => {
-        modalContainer.classList.add('hidden');
-        modalContainer.innerHTML = '';
-        currentModalProject = null;
-        document.body.style.overflow = '';
-      }, 300);
+  };
+  
+  const setupMobileMenu = () => {
+    const toggleBtn = document.getElementById('menu-toggle-btn');
+    const mobileMenu = document.getElementById('mobile-menu');
+    if (toggleBtn && mobileMenu) {
+      toggleBtn.addEventListener('click', () => {
+        mobileMenu.classList.toggle('hidden');
+      });
+      // Close menu when a link is clicked
+      mobileMenu.querySelectorAll('a').forEach(link => {
+        link.addEventListener('click', () => mobileMenu.classList.add('hidden'));
+      });
     }
-  }
+  };
 
-  window.nextImage = function() {
-    if (!currentModalProject) return;
-    const totalImages = currentModalProject.images.length;
-    currentImageIndex = (currentImageIndex + 1) % totalImages;
-    updateCarousel();
-  }
-
-  window.prevImage = function() {
-    if (!currentModalProject) return;
-    const totalImages = currentModalProject.images.length;
-    currentImageIndex = (currentImageIndex - 1 + totalImages) % totalImages;
-    updateCarousel();
-  }
-
-  // --- SCROLL ANIMATION OBSERVER ---
-  function setupScrollAnimations() {
+  const setupScrollReveal = () => {
+    const revealElements = document.querySelectorAll('.scroll-reveal');
     const observer = new IntersectionObserver((entries) => {
       entries.forEach(entry => {
         if (entry.isIntersecting) {
           entry.target.classList.add('visible');
+          observer.unobserve(entry.target);
         }
       });
-    }, { threshold: 0.1 });
+    }, {
+      threshold: 0.1
+    });
 
-    document.querySelectorAll('.scroll-reveal').forEach(el => {
+    revealElements.forEach(el => {
       observer.observe(el);
     });
-  }
+  };
+
+  const setupBackToTopButton = () => {
+    const button = document.getElementById('back-to-top');
+    if (button) {
+      window.addEventListener('scroll', () => {
+        if (window.scrollY > 300) {
+          button.classList.add('visible');
+        } else {
+          button.classList.remove('visible');
+        }
+      });
+    }
+  };
 
   // --- INITIALIZATION ---
-  populatePage();
-  setupScrollAnimations();
+  const populateContent = () => {
+    renderFeaturedItems();
+    renderRenderingSection();
+    renderAboutSection();
+    renderContactSection();
+    renderFooter();
+  };
+  
+  populateContent();
+  setupCarousel();
+  setupScrollHeader();
+  setupMobileMenu();
+  setupScrollReveal();
+  setupBackToTopButton();
 });
 </script>
 
